@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* importa a font do goole fonts direto no css */
+
+html {
+    scroll-behavior: smooth;
+    /* scrool suavizado */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    padding-top: 80px;
+    margin: 0;
+}
+
+header {
+   background-color: lightcoral;
+   position: fixed;
+   width: 100%;
+   top: 0;
+}
+
+header * {
+    display: inline-block;
+}
+/* todos os filhos do header */
+
+header h1, nav {
+   width: 49%;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    width: 100px;
+    text-align: center;
+    
+    display: inline;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+#contato {
+    text-align: center;
+    background-color: lightcoral;
+    color: #ffffff;
+}
+form {
+    width: 200px;
+    margin: 0 auto;
+}
+form * {
+    display: block;
+}
+input, textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+}
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.exp1 div, article{
+    display: inline-block;
+    width: 49%;
+}
+
+.exp1 .img {
+    background-image: url(../img/exp-1.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+.exp2 div, article{
+    display: inline-block;
+    width: 49%;
+}
+
+.exp2 .img {
+    background-image: url(../img/exp-2.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+@media (max-width:375px){
+    header {
+        background-color: lightsalmon;
+    }
+    /* nav {
+        display: none;
+    } */
+    /* ATÉ 375PX */
+    .exp1 div, article{
+        display: block;
+        width: 100%;
+    }
+    .exp1 .img {
+        background-position: center;
+    }
+    .exp1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .exp2 div, article{
+        display: block;
+        width: 100%;
+    }
+    .exp2 .img {
+        background-position: center;
+    }
+    .exp2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* menu hamburguer, como no americanas */
+}
